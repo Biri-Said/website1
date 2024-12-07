@@ -1,0 +1,50 @@
+body{
+    background-color:rgb(1, 1, 10);;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+
+h3 {
+    color: #00a800; 
+    font-size: 24px; 
+    font-family: Georgia, serif; 
+}
+
+img{
+    display: flex;
+    margin:auto ;
+    width: 490px;
+    height: 350px;;
+}
+h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+@keyframes x{
+    0%{
+        color: green;
+    }
+    50%{
+        color: rgb(0, 21, 255);
+    }
+    100%{
+        color: darkcyan;
+    }
+}
+
+h1{
+    animation: x 2s infinite;
+    text-align:center; /* Yatayda ortalar */
+}
+
+h3:hover{
+    animation: x 1s infinite;
+}
+
+
+p{
+    text-align: center;
+    font-size: large;
+}
