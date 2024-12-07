@@ -2,9 +2,7 @@ from flask import Flask, render_template
 import random
 import os
 
-app = Flask(__name__, static_folder='static')
-
-img = os.path.join(os.getcwd(), 'static', 'img')
+app = Flask(__name__)
 
 
 facts_list = [
@@ -58,8 +56,8 @@ def sifre_olusturucu():
 
 @app.route('/p')
 def resimli_fonksiyon():
-    bişiyler = os.path.join(app.static_folder, 'images')
-    resim = os.listdir(bişiyler)
+    picture = os.path.join(app.static_folder, 'images')
+    resim = os.listdir(picture)
     rastgele_image = random.choice(resim)
     return render_template('index.html', image=rastgele_image)
 
