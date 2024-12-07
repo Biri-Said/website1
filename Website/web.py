@@ -57,10 +57,10 @@ def sifre_olusturucu():
 
 
 @app.route('/p')
-def home():
+def resimli_fonksiyon():
     bişiyler = os.path.join(app.static_folder, 'images')
-    çokzor = os.listdir(bişiyler)
-    rastgele_image = random.choice(çokzor)
+    resim = os.listdir(bişiyler)
+    rastgele_image = random.choice(resim)
     return render_template('index.html', image=rastgele_image)
 
 
