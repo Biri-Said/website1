@@ -1,1 +1,1 @@
-Bi önceki dersteki tasarrud kodundan biraz yardım aldım birde ödev için gerekli olanlar web.py ve index.html
+hepsini yaptım biraz tasarruf sitesine benziyor birde random resime baya uğraştım
