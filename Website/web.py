@@ -22,11 +22,11 @@ facts_list = [
 
 @app.route("/")
 def hello_world():
-    return f"<h1>Merhaba!</h1> <h1>Aşağıdaki linklerden istediğini seçebilirsin<h1> <a href='/movies'>Movies</a> <br><br>  <a href='/Y&Z'>Yazı Tura</a> <br><br> <a href='/parola'>Parola oluştur</a> <br><br> <a href='/facts'>Random Facts</a> <br> <br> <a href='/p'>Random Resim</a>"
+    return f"<h1>Merhaba!</h1> <h1>Aşağıdaki linklerden istediğini seçebilirsin<h1> <a href='/movies'>Movies</a> <br><br>  <a href='/Y&Z'>Yazı Tura</a> <br><br> <a href='/parola'>Parola oluştur</a> <br><br> <a href='/facts'>Random Facts</a> <br> <br> <a href='/p'>Random Resim</a> <link>..static/css/web.css</link>"
 
 @app.route('/facts')
 def facts():
-    return f"<h2>{random.choice(facts_list)}</h2> <a href='/'>Ana sayfa</a>"
+    return f"<h2>{random.choice(facts_list)}</h2> <a href='/'>Ana sayfa</a> <link>..static/css/web.css</link>"
     
 
 @app.route("/movies")
@@ -40,7 +40,7 @@ def yazi_tura():
         b = "Yazı"
     else:
         b = "Tura"
-    return f"<h1>{b}</h1> <a href='/'>Ana sayfa</a>"
+    return f"<h1>{b}</h1> <a href='/'>Ana sayfa</a> <link>..static/css/web.css</link>"
 
 
 @app.route("/parola")
@@ -49,7 +49,7 @@ def sifre_olusturucu():
     sifre = ""
     for i in range(20):
         sifre += random.choice(ogeler)       
-    return f"<h2>{sifre}</h2> <a href='/'>Ana sayfa</a>"
+    return f"<h2>{sifre}</h2> <a href='/'>Ana sayfa</a> <link>..static/css/web.css</link>"
 
 
 
